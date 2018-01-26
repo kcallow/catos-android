@@ -13,6 +13,7 @@ tasks:
 # - Build the app (all flavors)
 # - Run unit tests
 # - Run code quality tools (findbugs, lint, checkstyle etc.)
+# ./tools/taskcluster/execute-firebase-test.sh is for testing purpose only. will remove on final PR
 ###############################################################################
   - provisionerId: '{{ taskcluster.docker.provisionerId }}'
     workerType: '{{ taskcluster.docker.workerType }}'
@@ -37,6 +38,8 @@ tasks:
           && git checkout {{event.head.sha}}
           && echo "--" > .adjust_token
           && ./gradlew clean assemble detektCheck ktlint lint pmd checkstyle findbugs test
+          && chmod +x ./tools/taskcluster/execute-firebase-test.sh
+          && ./tools/taskcluster/execute-firebase-test.sh
       artifacts:
         'public':
           type: 'directory'
@@ -64,7 +67,11 @@ tasks:
           - push
         branches:
           - master
+    scopes:
+      - "secrets:get:project/focus/tokens"
     payload:
+      features:
+        "taskclusterProxy": true
       maxRunTime: 3600
       deadline: "{{ '2 hours' | $fromNow }}"
       image: 'mozillamobile/focus-android'
@@ -78,6 +85,8 @@ tasks:
           && git checkout {{event.head.sha}}
           && echo "--" > .adjust_token
           && ./gradlew clean assemble detektCheck ktlint lint pmd checkstyle findbugs test
+          && chmod +x ./tools/taskcluster/execute-firebase-test.sh
+          && ./tools/taskcluster/execute-firebase-test.sh
       artifacts:
         'public':
           type: 'directory'
