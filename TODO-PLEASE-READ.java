@@ -12,7 +12,7 @@ Please, kindly make the buttons in file:
 run the following (Kotlin) functions:
 */
 
-import org.mozilla.focus.fragment.BrowserFragment.*
+import org.mozilla.focus.fragment.BrowserFragment.* //maybe this line is wrong (?)
 
     fun openApps(view: View) {
         loadUrl("cat:apps")
