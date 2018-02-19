@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/buttons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_marginTop="85dp"
+    android:layout_gravity="center|fill"
+    android:orientation="horizontal" >
+    <Button
+	android:id="@+id/appsButton"
+	android:layout_width="80dp"
+	android:layout_height="80dp"
+	android:layout_gravity="left"
+	android:textSize="40sp"
+	android:text="🎮" />
+    <Button
+	android:id="@+id/makerButton"
+	android:layout_width="80dp"
+	android:layout_height="80dp"
+	android:layout_marginLeft="80dp"
+	android:layout_gravity="left"
+	android:textSize="40sp"
+	android:text="🎨" />
+    <Button
+	android:id="@+id/netButton"
+	android:layout_width="80dp"
+	android:layout_height="80dp"
+	android:layout_marginRight="80dp"
+	android:layout_gravity="right"
+	android:textSize="40sp"
+	android:text="☸" />
+    <Button
+	android:id="@+id/talkButton"
+	android:layout_width="80dp"
+	android:layout_height="80dp"
+	android:layout_gravity="right"
+	android:textSize="40sp"
+	android:text="📞" />
+</FrameLayout>

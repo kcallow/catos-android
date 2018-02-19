@@ -17,7 +17,7 @@ android {
         targetSdkVersion 26
         versionCode 11 // This versionCode is "frozen" for local builds. For "release" builds we
                        // override this with a generated versionCode at build time.
-        versionName "4.0"
+        versionName "0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         multiDexEnabled true
@@ -178,6 +178,10 @@ dependencies {
     focusCompile 'com.google.android.gms:play-services-analytics:10.2.6' // Required by Adjust
 
     geckoCompile(name: 'geckoview-latest', ext: 'aar')
+
+    // Leakcanary is only being used with debug build variant as of now, all others use a no-op version
+    debugCompile "com.squareup.leakcanary:leakcanary-android:$leakcanary_version"
+    compile "com.squareup.leakcanary:leakcanary-android-no-op:$leakcanary_version"
 
     testCompile 'junit:junit:4.12'
     testCompile "org.robolectric:robolectric:3.5.1"

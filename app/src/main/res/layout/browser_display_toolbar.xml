@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/appbar"
+    android:layout_gravity="bottom"
     android:layout_width="match_parent"
     android:layout_height="56dp"
     android:clipChildren="false">
@@ -19,10 +20,6 @@
         app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed"
         android:clipChildren="false">
 
-        <include
-            android:id="@+id/toolbarContent"
-            layout="@layout/toolbar"/>
-
         <org.mozilla.focus.widget.AnimatedProgressBar
             android:id="@+id/progress"
             style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
@@ -35,6 +32,10 @@
             android:layout_marginBottom="-1dp"
             android:importantForAccessibility="yes"
             tools:progress="50" />
+
+        <include
+            android:id="@+id/toolbarContent"
+            layout="@layout/toolbar"/>
     </FrameLayout>
 
 </org.mozilla.focus.browser.DisplayToolbar>

@@ -122,7 +122,7 @@ public class RestartTest {
         TestHelper.pressRecentAppsKey();
         UiObject dismissFocusBtn = TestHelper.mDevice.findObject(new UiSelector()
                 .resourceId("com.android.systemui:id/dismiss_task")
-                .descriptionContains("Dismiss Firefox Focus")
+                .descriptionContains("Dismiss CatOS")
                 .enabled(true));
         dismissFocusBtn.click();
         dismissFocusBtn.waitUntilGone(waitingTime);

@@ -11,12 +11,12 @@
     <string name="action_save">Save</string>
 
     <!-- This text is shown in the URL bar when it's empty -->
-    <string name="urlbar_hint">Search or enter address</string>
+    <string name="urlbar_hint">Ask me anything...</string>
 
-    <string name="teaser">Automatic private browsing.\nBrowse. Erase. Repeat.</string>
+    <string name="teaser">Everyone\'s OS.\nProductivity. Creativity. Freedom.</string>
 
     <!-- "Snackbar" shown after the user has pressed the 'erase' button at the end of a browsing session -->
-    <string name="feedback_erase">Your browsing history has been erased.</string>
+    <string name="feedback_erase">Welcome back home.</string>
 
     <!-- This label is shown below the URL bar as soon as the user enters text. Clicking the label will perform a search -->
     <string name="search_hint">Search for %1$s</string>
@@ -39,7 +39,7 @@
     <string name="menu_add_to_home_screen">Add to Home screen</string>
 
     <!-- Menu item: Shows information about features and changes that are new to this version -->
-    <string name="menu_whats_new">What\'s New</string>
+    <string name="menu_whats_new">What\'s new?</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_about">About</string>
     <string name="menu_help">Help</string>
@@ -82,7 +82,7 @@
          Clicking this action will launch Focus and perform a search in the default search engine. -->
     <string name="text_selection_search_action">Search Privately</string>
 
-    <!-- Content of about focus. Argument 1 is the app name (Firefox Focus/Firefox Klar/etc).
+    <!-- Content of about focus. Argument 1 is the app name (CatOS/Firefox Klar/etc).
          Argument 2 is the url for the learn-more link. -->
     <string name="about_content"><![CDATA[
 <p>%1$s puts you in control.</p>
@@ -200,7 +200,7 @@
     <!-- This preference does not set Focus as the default browser but instead links to Android's
      "default apps" settings screen or if not supported by this Android version to a SUMO page describing
      how to set Focus as a default browser.
-      %1$s will be replaced by the app name (e.g. Firefox Focus) -->
+      %1$s will be replaced by the app name (e.g. CatOS) -->
     <string name="preference_default_browser2">Make %1$s default browser</string>
 
     <string name="preference_category_mozilla">Mozilla</string>
@@ -209,13 +209,13 @@
     <!-- A link to SUMO at the end of the summary (preference_mozilla_telemetry_summary2) of the "Send anonymous usage data" setting. -->
     <string name="preference_mozilla_telemetry_summary">Learn more</string>
 
-    <!-- %1$s will be replaced with the name of the app (e.g. Firefox Focus) -->
+    <!-- %1$s will be replaced with the name of the app (e.g. CatOS) -->
     <string name="preference_mozilla_telemetry_summary2">Mozilla strives to collect only what we need to provide and improve %1$s for everyone.</string>
 
     <!-- In-app link (in settings) to Focus privacy notice. -->
     <string name="preference_privacy_notice">Privacy Notice</string>
 
-    <!-- Item in Preferences that shows the about page. Parameter 1 is the app name, i.e. Firefox Focus/Firefox Klar. -->
+    <!-- Item in Preferences that shows the about page. Parameter 1 is the app name, i.e. CatOS/Firefox Klar. -->
     <string name="preference_about">About %1$s</string>
 
     <!-- Header for the list of installed search engines -->
@@ -343,11 +343,11 @@
 
     <string name="external_app_prompt_title">Open link in another  app</string>
     <!-- This string is shown when the user has clicked a link that needs to be opened in a different app.
-         Argument 2 is the external app name, argument 1 is our name (i.e. Firefox Focus, or Firefox Klar). -->
+         Argument 2 is the external app name, argument 1 is our name (i.e. CatOS, or Firefox Klar). -->
     <string name="external_app_prompt">You can leave %1$s to open this link in %2$s.</string>
     <!-- This text is the title of a dialog shown if no app could be found for a custom link protocol. -->
     <string name="external_app_prompt_no_app_title">Find an app that can open link</string>
-    <!-- This text is shown in a dialog if no app could be found for a custom link protocol. %1$s is the name of the app (i.e. Firefox Focus) and %2$s is the name of
+    <!-- This text is shown in a dialog if no app could be found for a custom link protocol. %1$s is the name of the app (i.e. CatOS) and %2$s is the name of
          the app store installed on the device (usually that's Google Play). -->
     <string name="external_app_prompt_no_app">None of the apps on your device are able to open this link. You can leave %1$s to search %2$s for an app that can.</string>
     <!-- This label is shown above a list of apps that can be used to open a given link -->
@@ -359,7 +359,7 @@
     <!-- Snackbar action to immediately open the successfully downloaded file. -->
     <string name="download_snackbar_open">Open</string>
 
-    <!-- Download dialog: Warns users that downloaded files will not be deleted even when erasing history. %1$s will be replaced with the app name (i.e. Firefox Focus). -->
+    <!-- Download dialog: Warns users that downloaded files will not be deleted even when erasing history. %1$s will be replaced with the app name (i.e. CatOS). -->
     <string name="download_dialog_warning"><![CDATA[Downloaded files <b>will not be deleted</b> when you erase %1$s history.]]></string>
 
     <!-- Title of download dialogue -->
@@ -450,30 +450,30 @@ be temporary, and you can try again later.</li>
     <!-- Label used in the contextmenu shown when long-pressing on a link -->
     <string name="contextmenu_open_in_new_tab">Open link in new tab</string>
 
-    <!-- This is a warning shown in the browser's context menu (when long pressing an image). %1$s will be replaced with the long name of the app (e.g. Firefox Focus). -->
+    <!-- This is a warning shown in the browser's context menu (when long pressing an image). %1$s will be replaced with the long name of the app (e.g. CatOS). -->
     <string name="contextmenu_image_warning"><![CDATA[Saved and shared images <b>will not be deleted</b> when you erase %1$s history.]]></string>
 
     <!-- First run tour (Default browser): Title -->
-    <string name="firstrun_defaultbrowser_title">Power up your privacy</string>
+    <string name="firstrun_defaultbrowser_title">Welcome to my OS!</string>
     <!-- First run tour (Default browser): Text. -->
-    <string name="firstrun_defaultbrowser_text2">Take private browsing to the next level. Block ads and other content that can track you across sites and bog down page load times.</string>
+    <string name="firstrun_defaultbrowser_text2">Tired of Microsoft, Google and Apple\'s nonsense? Wanna make games and apps the easy way? Wanna make your phone YOUR PHONE? Then welcome to CatOS.</string>
 
     <!-- First run tour (Search): Title -->
-    <string name="firstrun_search_title">Your search, your way</string>
+    <string name="firstrun_search_title">Find cool apps and games made by people like you</string>
     <!-- First run tour (Search): Text -->
-    <string name="firstrun_search_text">Searching for something different? Choose another default search engine in Settings.</string>
+    <string name="firstrun_search_text">CatOS is based on productivity, creativity and freedom. Anyone, even children, can create and enhance the tools included in CatOS. With people making their own apps, their problems can be solved the best way possible. Sorry, full-time coders!</string>
 
     <!-- First run tour (Shortcut): Title -->
-    <string name="firstrun_shortcut_title">Add shortcuts to your home screen</string>
-    <!-- First run tour (Shortcut): Text. %1$s will be replaced with the name of the app (e.g. Firefox Focus) -->
-    <string name="firstrun_shortcut_text">Return to your favorite sites in %1$s quickly. Just select \"Add to Home screen\" from the %1$s menu.</string>
+    <string name="firstrun_shortcut_title">Make your phone your own</string>
+    <!-- First run tour (Shortcut): Text. %1$s will be replaced with the name of the app (e.g. CatOS) -->
+    <string name="firstrun_shortcut_text">CatOS apps integrate seamlessly into your main OS. They have their own icons in your home screen and you can easily share things from within CatOS to other apps.</string>
 
     <!-- First run tour (Privacy): Title -->
-    <string name="firstrun_privacy_title">Make privacy a habit</string>
-    <!-- First run tour (Privacy): Text. %1$s will be replaced with the name of the app (e.g. Firefox Focus) -->
-    <string name="firstrun_privacy_text">Set %1$s as your default browser and get the benefits of private browsing when you open webpages from other apps.</string>
+    <string name="firstrun_privacy_title">Unleash the cat power</string>
+    <!-- First run tour (Privacy): Text. %1$s will be replaced with the name of the app (e.g. CatOS) -->
+    <string name="firstrun_privacy_text">CatOS does not assume. It does not impose. CatOS aims to help you. With CatOS no one can stop you from making what you want and need. It aims for digital democracy in the age of Big Brother. Let\'s make the change!</string>
 
-    <string name="firstrun_close_button">OK, got it!</string>
+    <string name="firstrun_close_button">OK, thanks!</string>
     <string name="firstrun_skip_button">Skip</string>
     <string name="firstrun_next_button">Next</string>
 
@@ -512,7 +512,7 @@ be temporary, and you can try again later.</li>
     <string name="notification_browsing_session_channel_name">Private browsing session</string>
 
     <!-- The user visible description of the "notification channel" (Android 8+ feature) for the ongoing notification shown while a browsing session is active.
-    The recommended maximum length is 300 characters; the value may be truncated if it is too long. %1$s will be replaced with the name of the app (e.g. Firefox Focus).
+    The recommended maximum length is 300 characters; the value may be truncated if it is too long. %1$s will be replaced with the name of the app (e.g. CatOS).
 
     * To understand what notification channels are, see: https://www.androidcentral.com/notification-channels
     * To see how this string will look like in Android's UI, see: https://github.com/mozilla-mobile/focus-android/issues/863#issuecomment-324105723
@@ -527,26 +527,26 @@ be temporary, and you can try again later.</li>
     <string name="download_firefox">Download Firefox</string>
 
     <!-- Text shown in the "Your rights" screen.
-    %1$s will be replaced with the name of the app (e.g. Firefox Focus)-->
+    %1$s will be replaced with the name of the app (e.g. CatOS)-->
     <string name="your_rights_content1"><![CDATA[%1$s is free and open source software made by Mozilla and other contributors.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
-    %1$s will be replaced with the name of the app (e.g. Firefox Focus)
+    %1$s will be replaced with the name of the app (e.g. CatOS)
     %2$s will be replaced with a URL linking to the MPL (e.g. https://www.mozilla.org/en-US/MPL/) -->
     <string name="your_rights_content2"><![CDATA[%1$s is made available to you under the terms of the <a href="%2$s">Mozilla Public License</a> and other open source licenses.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
-    %1$s will be replaced with the name of the app (e.g. Firefox Focus)
+    %1$s will be replaced with the name of the app (e.g. CatOS)
     %2$s will be replaced with a URL linking to the trademark policy (e.g. https://www.mozilla.org/foundation/trademarks/policy/) -->
     <string name="your_rights_content3"><![CDATA[You are not granted any rights or licenses to the trademarks of the Mozilla Foundation or any party, including the Mozilla, Firefox or %1$s names or logos. Additional information may be found <a href="%2$s">here</a>.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
-    %1$s will be replaced with the name of the app (e.g. Firefox Focus)
+    %1$s will be replaced with the name of the app (e.g. CatOS)
     %2$s will be replaced with a URL linking to the list of licenses used by the dependencies.-->
     <string name="your_rights_content4"><![CDATA[Additional source code for %1$s is available under various other free and open source <a href="%2$s">licenses</a>.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
-    %1$s will be replaced with the name of the app (e.g. Firefox Focus)
+    %1$s will be replaced with the name of the app (e.g. CatOS)
     %2$s will be replaced with a URL linking to the GPL
     %3$s will be replaced with a URL linking to the tracking protection wiki page (e.g. https://wiki.mozilla.org/Security/Tracking_protection#Lists) -->
     <string name="your_rights_content5"><![CDATA[%1$s also uses blocklists provided by Disconnect, Inc. as separate and independent works under the <a href="%2$s">GNU General Public License v3</a>, and available <a href="%3$s">here</a>.]]></string>

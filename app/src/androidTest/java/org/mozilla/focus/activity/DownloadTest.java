@@ -130,7 +130,7 @@ public class DownloadTest {
         Assert.assertTrue(downloadBtn.isEnabled());
         Assert.assertEquals(downloadFileName.getText(), "download.jpg");
         Assert.assertEquals(downloadWarning.getText(),
-                "Downloaded files will not be deleted when you erase Firefox Focus history.");
+                "Downloaded files will not be deleted when you erase CatOS history.");
         downloadBtn.click();
         completedMsg.waitForExists(waitingTime);
         Assert.assertTrue(completedMsg.isEnabled());

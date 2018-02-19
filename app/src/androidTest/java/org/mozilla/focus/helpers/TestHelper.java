@@ -48,16 +48,16 @@ public final class TestHelper {
     /********* First View Locators ***********/
 
     public static UiObject firstSlide = mDevice.findObject(new UiSelector()
-            .text("Power up your privacy")
+            .text("Welcome to my OS!")
             .enabled(true));
     public static UiObject secondSlide = mDevice.findObject(new UiSelector()
-            .text("Your search, your way")
+            .text("Find cool apps and games made by people like you")
             .enabled(true));
     public static UiObject thirdSlide = mDevice.findObject(new UiSelector()
-            .text("Add shortcuts to your home screen")
+            .text("Make your phone your own")
             .enabled(true));
     public static UiObject lastSlide = mDevice.findObject(new UiSelector()
-            .text("Make privacy a habit")
+            .text("Unleash the cat power")
             .enabled(true));
     public static UiObject nextBtn = mDevice.findObject(new UiSelector()
             .resourceId("org.mozilla.focus.debug:id/next")

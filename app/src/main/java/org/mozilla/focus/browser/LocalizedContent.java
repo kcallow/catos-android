@@ -24,12 +24,28 @@ import java.util.Map;
 public class LocalizedContent {
     // We can't use "about:" because webview silently swallows about: pages, hence we use
     // a custom scheme.
-    public static final String URL_ABOUT = "focus:about";
-    public static final String URL_RIGHTS = "focus:rights";
+    public static final String URL_ABOUT = "cat:about";
+    public static final String URL_APPS = "cat:apps";
+    public static final String URL_MAKER = "cat:maker";
+    public static final String URL_NET = "cat:net";
+    public static final String URL_TALK = "cat:talk";
+    public static final String URL_RIGHTS = "cat:rights";
 
     public static boolean handleInternalContent(String url, WebView webView) {
         if (URL_ABOUT.equals(url)) {
             loadAbout(webView);
+            return true;
+        } else if (URL_APPS.equals(url)) {
+            loadApps(webView);
+            return true;
+        } else if (URL_MAKER.equals(url)) {
+            loadMaker(webView);
+            return true;
+        } else if (URL_NET.equals(url)) {
+            loadNet(webView);
+            return true;
+        } else if (URL_TALK.equals(url)) {
+            loadTalk(webView);
             return true;
         } else if (URL_RIGHTS.equals(url)) {
             loadRights(webView);
@@ -40,7 +56,7 @@ public class LocalizedContent {
     }
 
     /**
-     * Load the content for focus:about
+     * Load the content for cat:apps
      */
     private static void loadAbout(@NonNull final WebView webView) {
         final Context context = webView.getContext();
@@ -72,8 +88,37 @@ public class LocalizedContent {
         webView.loadDataWithBaseURL("file:///android_res/raw/about.html", data, "text/html", "UTF-8", null);
     }
 
+
     /**
-     * Load the content for focus:rights
+     * Load the content for cat:apps
+     */
+    private static void loadApps(@NonNull final WebView webView) {
+        webView.loadUrl("http://localhost:8088/apps");
+    }
+
+    /**
+     * Load the content for cat:maker
+     */
+    private static void loadMaker(@NonNull final WebView webView) {
+        webView.loadUrl("http://localhost:8088/maker");
+    }
+
+    /**
+     * Load the content for cat:net
+     */
+    private static void loadNet(@NonNull final WebView webView) {
+        webView.loadUrl("http://localhost:8088/net");
+    }
+
+    /**
+     * Load the content for cat:talk
+     */
+    private static void loadTalk(@NonNull final WebView webView) {
+        webView.loadUrl("http://localhost:8088/talk");
+    }
+
+    /**
+     * Load the content for cat:rights
      */
     private static void loadRights(@NonNull final WebView webView) {
         final Context context = webView.getContext();

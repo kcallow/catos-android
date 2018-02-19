@@ -42,9 +42,6 @@
 
             </android.support.v4.widget.SwipeRefreshLayout>
 
-            <include
-                layout="@layout/browser_display_toolbar"/>
-
             <org.mozilla.focus.widget.FloatingSessionsButton
                 android:id="@+id/tabs"
                 android:layout_width="wrap_content"
@@ -67,7 +64,7 @@
                 android:layout_marginBottom="@dimen/floating_action_button_margin"
                 android:layout_marginEnd="@dimen/floating_action_button_margin"
                 android:elevation="4dp"
-                android:src="@drawable/ic_delete"
+                android:src="@drawable/ic_shortcut_erase"
                 app:backgroundTint="@color/colorErase"
                 app:rippleColor="@color/colorErasePressed"
                 app:fabSize="normal"
@@ -75,6 +72,10 @@
                 android:contentDescription="@string/content_description_erase" />
 
         </org.mozilla.focus.widget.ResizableKeyboardCoordinatorLayout>
+
+            <include
+                layout="@layout/browser_display_toolbar"/>
+
     </LinearLayout>
 
     <FrameLayout

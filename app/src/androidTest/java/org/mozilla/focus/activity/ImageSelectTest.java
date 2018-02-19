@@ -121,7 +121,7 @@ public class ImageSelectTest {
             .enabled(true));
     private UiObject warning = TestHelper.mDevice.findObject(new UiSelector()
             .resourceId("org.mozilla.focus.debug:id/warning")
-            .text("Saved and shared images will not be deleted when you erase Firefox Focus history.")
+            .text("Saved and shared images will not be deleted when you erase CatOS history.")
             .enabled(true));
 
     @Test

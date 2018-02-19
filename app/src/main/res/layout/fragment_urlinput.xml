@@ -40,6 +40,7 @@
 
     </org.mozilla.focus.widget.ResizableKeyboardLinearLayout>
 
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="81dp"
@@ -82,7 +83,7 @@
                     android:imeOptions="actionGo|flagNoExtractUi|flagNoFullscreen"
                     android:background="@android:color/transparent"
                     android:inputType="textUri"
-                    android:lines="1"
+                    android:lines="2"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"
                     android:paddingStart="8dp"
@@ -92,7 +93,7 @@
                     android:textColor="#ffffff"
                     android:textColorHighlight="@color/colorAccent"
                     android:textColorHint="@color/colorTextInactive"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
                     android:textCursorDrawable="@drawable/cursor"
                     android:importantForAutofill="no"
                     tools:targetApi="o" /><!-- importantForAutofill is only supported on Android O+ -->
@@ -116,12 +117,13 @@
                     android:visibility="gone"
                     android:background="?android:attr/selectableItemBackgroundBorderless"
                     android:contentDescription="@string/content_description_menu" />
-
             </LinearLayout>
 
         </FrameLayout>
-
     </FrameLayout>
+
+    <include
+	layout="@layout/buttons"/>
 
     <View
         android:id="@+id/dismissView"
@@ -157,6 +159,8 @@
             android:layout_height="1dp"
             android:background="#33ffffff"
             android:layout_gravity="bottom" />
+
+
 
     </FrameLayout>
 

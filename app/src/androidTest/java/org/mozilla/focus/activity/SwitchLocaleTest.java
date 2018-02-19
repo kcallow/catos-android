@@ -169,7 +169,7 @@ public class SwitchLocaleTest {
         TestHelper.pressBackKey();
         UiObject englishTitle = TestHelper.mDevice.findObject(new UiSelector()
                 .className("android.widget.TextView")
-                .text("Automatic private browsing.\nBrowse. Erase. Repeat."));
+                .text("Everyone\'s OS.\nProductivity. Creativity. Freedom."));
         englishTitle.waitForExists(waitingTime);
         Assert.assertTrue(englishTitle.exists());
         TestHelper.menuButton.perform(click());
