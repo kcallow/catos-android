@@ -3,7 +3,9 @@
 ## Hackers, see catos-android/TODO-PLEASE-READ.java ##
 ### _Thank you for you help with Java code! <3_ ###
 
-CatOS = Unix + NodeJS + Focus 
+CatOS = Unix + NodeJS + Browser
+
+This project is the browser part of CatOS, for Android. Thanks Mozilla people for the quality code! (^.^)
 
 <a href="https://play.google.com/store/apps/details?id=org.mozilla.focus" target="_blank"><img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="5"/></a>
 
@@ -11,10 +13,12 @@ CatOS = Unix + NodeJS + Focus
 Build instructions
 ------------------
 
+0. Install Android Studio. Duh! _Or be a command line hacker like me! ;)_
+
 1. Clone the repository:
 
   ```shell
-  git clone https://github.com/mozilla-mobile/focus-android
+  git clone https://github.com/kcallow/catos-android
   ```
 
 2. Import the project into Android Studio or build on the command line:
