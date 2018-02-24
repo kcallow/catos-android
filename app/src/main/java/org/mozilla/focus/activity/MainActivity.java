@@ -31,7 +31,10 @@ import org.mozilla.focus.utils.ViewUtils;
 import org.mozilla.focus.web.IWebView;
 import org.mozilla.focus.web.WebViewProvider;
 
+import org.mozilla.focus.session.Source;
+
 import java.util.List;
+
 
 public class MainActivity extends LocaleAwareAppCompatActivity {
     public static final String ACTION_ERASE = "erase";
@@ -170,9 +173,18 @@ public class MainActivity extends LocaleAwareAppCompatActivity {
     }
 
     private void showUrlInputScreen() {
+	//	BLACK MAGIC!!! THE EXORCISM OF JAVA! 
+//JAVASCRIPT WILL FREE US FROM GOOGLE AND APPLE'S CHAINS!!
         final FragmentManager fragmentManager = getSupportFragmentManager();
         final BrowserFragment browserFragment = (BrowserFragment) fragmentManager.findFragmentByTag(BrowserFragment.FRAGMENT_TAG);
+        final FragmentTransaction transaction = fragmentManager
+                .beginTransaction();
+        transaction
+                .replace(R.id.container, BrowserFragment.createForSession(new Session("cat:apps")), BrowserFragment.FRAGMENT_TAG)
+                .commit();
 
+/*
+	browserFragment.loadUrl("cat:apps");
         final boolean isShowingBrowser = browserFragment != null;
 
         if (isShowingBrowser) {
@@ -199,6 +211,7 @@ public class MainActivity extends LocaleAwareAppCompatActivity {
         transaction
                 .replace(R.id.container, UrlInputFragment.createWithoutSession(), UrlInputFragment.FRAGMENT_TAG)
                 .commit();
+*/
     }
 
     private void showFirstrun() {

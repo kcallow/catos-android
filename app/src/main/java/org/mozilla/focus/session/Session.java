@@ -46,6 +46,11 @@ public class Session {
         this.isRecorded = false;
     }
 
+    public Session(String url){//, @NonNull CustomTabConfig customTabConfig) {
+        this(Source.CUSTOM_TAB, url);
+        this.customTabConfig = customTabConfig;
+    }
+
     /* package */ Session(String url, @NonNull CustomTabConfig customTabConfig) {
         this(Source.CUSTOM_TAB, url);
 
