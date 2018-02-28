@@ -6,7 +6,7 @@ CatOS = Unix + NodeJS + Browser
 
 This project is the browser part of CatOS, for Android. Thanks Mozilla people for the quality code! (^.^)
 
-<a href="https://github.com/kcallow/catos-android/blob/master/apk/CatOS_0.1.9.apk" target="_blank"><img src="https://github.com/kcallow/CatOS/raw/master/git-it.png" alt="Get it on Google Play" height="70%"/></a>
+<a href="https://github.com/kcallow/catos-android/blob/master/apk/CatOS_0.1.9.apk" target="_blank"><img src="git-it.png" alt="Get it on GitHub" height="70%"/></a>
 
 
 Build instructions
