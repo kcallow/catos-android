@@ -1,7 +1,6 @@
 ![CatOS](https://github.com/kcallow/CatOS/raw/master/logo.png "CatOS Logo") 
 # CatOS: _A Distributed Web App Ecosystem_
-## Hackers, see catos-android/TODO-PLEASE-READ.java ##
-### _Thank you for you help with Java code! <3_ ###
+### Productivity.  Creativity.  Freedom.
 
 CatOS = Unix + NodeJS + Browser
 
@@ -13,7 +12,7 @@ This project is the browser part of CatOS, for Android. Thanks Mozilla people fo
 Build instructions
 ------------------
 
-0. Install Android Studio. Duh! _Or be a command line hacker like me! ;)_
+0. Install Android Studio. _Or be a command line hacker like me! ;)_
 
 1. Clone the repository:
 
