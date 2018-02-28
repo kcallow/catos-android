@@ -5,12 +5,39 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="file:///android_asset/style.css">
+<style>
+body {
+	background: black;
+}
+button {
+	width:24%;
+	font-size:40px;
+	color: white;
+	background: none;
+	border: none;
+}
+.nav {
+    background: linear-gradient(rgba(0,0,0,0), rgba(255,255,255,0.15));
+    border-radius: 4px;
+    position: fixed;
+    left: 1%;
+    right: 1%;
+    bottom: 0;
+    height: 60px;
+}
+</style>
 </head>
 <html>
 <body class="about" dir="%dir%">
-<img src="%wordmark%" id="wordmark"/>
-<p class="subtitle">%about-version%</p>
-Hacked with love by kc.
-%about-content%
+<div style="position: fixed; top: 25%; left: 20%; right: 20%;">
+	<img src="%wordmark%" id="wordmark"/>
+	<p class="subtitle">v0.1 by kc</p>
+</div>
+<div class="nav">
+	<a href="cat:apps" style="background:red" target="_blank"><button>🎮</button></a>
+	<a href="cat:maker" style="background:green" target="_blank"><button>🎨</button></a>
+	<a href="cat:net" style="background:blue" target="_blank"><button>☸</button></a>
+	<a href="cat:talk" style="background:yellow" target="_blank"><button>📞</button></a>
+</div>
 </body>
 </html>
